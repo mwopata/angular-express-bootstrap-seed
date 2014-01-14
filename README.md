@@ -1,3 +1,7 @@
+# FriendPerts
+Uses AngularFire, Facebook API, Firebase, and the angular-express-bootstrap seed to create a simple twitter like
+app with Facebook authentication using the Firebase and Facebook APIs.
+
 # Angular Express Bootstrap Seed
 
 Forked from [btford/angular-express-seed](https://github.com/btford/angular-express-seed) and spiced with [Twitter Bootstrap](https://github.com/twitter/bootstrap). jQuery added for convenience.
