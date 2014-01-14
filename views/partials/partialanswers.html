@@ -1,0 +1,66 @@
+<div data-ng-controller="AnswersCtrl" data-ng-init="">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 style="text-align: center">{{usrArr.name}}'s Answers</h2>
+        </div>
+        <div class = "row" data-ng-repeat="(askkey,askdata) in usrArr.answers">
+            <hr>
+            <div class ="col-md-12">
+                <span class="lead">{{askdata.ask}}</span>
+                <span class="text-muted">By: {{askdata.name}}</span>
+            </div>
+            <div class = "col-md-12" data-ng-repeat="(answerskey,answersdata) in askdata.answers">
+                <div class = "col-md-10 offset1">
+                    <i class="glyphicon glyphicon-ok-sign"></i><p style="display: inline"> {{answersdata.answer}} </p><div class="text-muted" style="display: inline"> -- {{answersdata.name}}</div>
+                </div>
+            </div>
+            <div class ="col-md-12">
+                <form class="form-horizontal">
+                    <div class="control-group">
+                        <div class="row">
+                            <div class="col-md-11">
+                                <input type="text" class="form-control" id = "inputAnswer" placeholder="My Answer" data-ng-model="newanswers[askkey]">
+                            </div>
+                            <div class="col-md-1">
+                                <button class="btn btn-primary" data-ng-click="addAnswer('{{askkey}}', {{askdata.user}})">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+                <!--<table>
+                <tr>
+                    <td><p class="lead"> {{askdata.ask}}</p></td>
+                    <td data-ng-repeat="(tagkey,tagdata) in askdata.tags">
+                        <p>
+                            <i class="glyphicon glyphicon-tag"></i>
+                            {{tagdata.tag}}
+                            <span class="text-muted">By: {{askdata.name}}</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr data-ng-repeat="(answerskey,answersdata) in askdata.answers">
+                    <td><i class="icon-ok-sign"></i><p style="display: inline"> {{answersdata.answer}} </p><div class="text-muted" style="display: inline"> -- {{answersdata.name}}</div></td>
+                </tr>
+                <tr>
+                    <td>
+                        <form class="form-horizontal">
+                            <div class="control-group">
+                                <div class="row">
+                                    <div class="col-md-11">
+                                        <input type="text" class="form-control" id = "inputAnswer" placeholder="My Answer" data-ng-model="newanswers[askkey]">
+                                    </div>
+                                    <div class="col-md-1">
+                                        <button class="btn btn-primary" data-ng-click="addAnswer('{{askkey}}', {{askdata.user}})">Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+            </table>-->
+        </div>
+        <div class = "col-md-12 offset1" data-ng-repeat="(answerskey,answersdata) in askdata.answers">{{answersdata.answer}}</div>
+    </div>
+</div>

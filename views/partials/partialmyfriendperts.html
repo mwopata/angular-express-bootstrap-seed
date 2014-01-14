@@ -1,0 +1,78 @@
+<div data-ng-init="findAnswerers();">
+    <div class="row">
+
+        <div class="col-md-10" style="border: 10px 1px 1px 1px; border-color: black">
+            <h3 class = "text-center">My FriendPerts</h3>
+<!--            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <input type="search" class="form-control search-query text-center" data-ng-model="search.data2.name" placeholder="Filter">
+                </div>
+
+            </div>
+            <br>-->
+            <div class = "row">
+                <table class="table">
+                    <tr>
+                        <th></th>
+                        <th  class="text-center">Name</th>
+                        <th  class="text-center">Tags</th>
+                        <th  class="text-center">Add Tag</th>
+                        <th></th>
+                    </tr>
+                    <tr data-ng-repeat="(key2, data2) in usrArr.answerers|filter:search | filter:strictsearch:true | limitTo:20">
+                        <td  class="text-center">
+                            <div class="control-group">
+                                <div class="controls">
+                                    <button class="btn btn-small btn-danger" data-ng-click="removeAnswerer({{key2}})">X</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td  class="text-center"><p class="lead">{{ data2.name }}</p></td>
+                        <td  class="text-center">
+                            <div class = "btn-group" style="border: 1px 1px 1px 1px" data-ng-repeat="(key, data) in data2.tags">
+                                <a class = "btn btn-mini">{{data.tag}}</a>
+                                <a class = "btn btn-mini" data-ng-click="disassociateTagtoUser('{{key}}', {{key2}})"><span class="glyphicon glyphicon-remove"></span></a>
+                            </div>
+                        </td>
+                        <td  class="text-center">
+                            <div class="control-group">
+                                <div class="controls controls-row">
+                                    <select class="form-control" data-ng-model="newtags[key2]" data-ng-options="k as v.tag for (k,v) in usrArr.tags"></select>
+                               </div>
+                            </div>
+                        </td>
+                        <td  class="text-center">
+                            <button class="btn btn-primary" data-ng-click="associateTagtoUser({{key2}})" data-ng-show="!tag.{{key2}}">Add</button>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-2" style="border: 10px 1px 1px 1px; border-color: black">
+            <h3 class="text-center">My Tags</h3>
+            <table class="table">
+                <th></th>
+                <th  class="text-center">Tags</th></tx>
+                <tr data-ng-repeat="(tagkey,tagdata) in usrArr.tags">
+                    <td>
+                        <div class="control-group">
+                            <div class="controls">
+                                <button class="btn btn-small btn-danger" data-ng-click="removeMyTag('{{tagkey}}')">X</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td  class="text-center">{{ tagdata.tag }}</td>
+                </tr>
+            </table>
+            <div enter class="control-group">
+                <div class="input-group">
+                    <input type="text" class="form-control search-query text-center" data-ng-model="mynewtag" id="testId" placeholder="New tag">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" data-ng-click="addMyTag()">+</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

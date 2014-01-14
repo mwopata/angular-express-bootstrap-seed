@@ -1,0 +1,46 @@
+<div data-ng-show="loadingpage">
+    <div data-ng-init="">
+        <div class="row">
+            <div class ="col-md-8">
+                <input type="text" class="form-control" data-ng-model="question" placeholder="Ask a New Question">
+            </div>
+            <div class="col-md-2">
+                <select class="form-control" data-ng-model="newtag" id = "newtag" data-ng-options="k as v.tag for (k,v) in usrArr.tags"></select>
+            </div>
+            <div class="col-md-2">
+                <button class="btn" data-ng-click="associateTagtoAsk()">Add Tag</button>
+                <button class="btn btn-primary" data-ng-click="addAsk()">Ask</button>
+            </div>
+        </div>
+        <div class = "row">
+            <div class="col-md-8">
+                <div class = "btn-group" data-ng-repeat="(key, data) in asktags">
+                    <a class = "btn btn-primary">{{data.tag}}</a>
+                    <a class = "btn btn-primary" data-ng-click="disassociateTagtoAsk('{{key}}')"><span class="glyphicon glyphicon-remove"></span></a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="row" data-ng-repeat="(askkey,askdata) in usrArr.asks">
+            <hr>
+            <table>
+                <tr>
+                    <td><p class="lead"> {{askdata.ask}}</p></td>
+                    <td data-ng-repeat="(tagkey,tagdata) in askdata.tags">
+                        <p class="lead">
+                            <i class="icon-tag"></i>
+                            {{tagdata.tag}}
+                        </p>
+                    </td>
+                    <td><button class="btn btn-danger" data-ng-click="removeAsk('{{askkey}}')">Delete</button></td>
+                </tr>
+                <tr data-ng-repeat="(answerskey,answersdata) in askdata.answers">
+                    <td><i class="icon-ok-sign"></i><p style="display: inline"> {{answersdata.answer}} </p>
+                        <div class="text-muted" style="display: inline"> -- {{usrArr.answerers[answersdata.user].name}}</div></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

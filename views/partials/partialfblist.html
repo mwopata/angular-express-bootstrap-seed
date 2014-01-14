@@ -1,0 +1,25 @@
+<div data-ng-controller="MyFriendpertsCtrl">
+    <div class="row">
+        <div class="col-md-12" style="text-align: center">
+            <h2>{{usrArr.name}}'s Friends (Showing 20)</h2>
+        </div>
+        <div class = "col-md-12" style="text-align: center; padding-bottom: 10px">
+            <input type="search" class="input-small form-control text-center" style="width:50%; display: inline-block" data-ng-model="search.name" placeholder="Search by Name">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <tr data-ng-repeat="myfriends in fbObject.friends.data|filter:search | filter:strictsearch:true | limitTo:20">
+                    <td class="text-center"><img ng-src="{{myfriends.picture.data.url}}" class="img-rounded"></td>
+                    <td class="text-center">{{myfriends.name}}</td>
+                    <td class="text-center"><btn class="btn btn-primary ng-hide" ng-model="strict" ng-hide="usrArr.answerers[myfriends.id].name"
+                             data-ng-click="addAnswerer('{{myfriends.id}}', '{{myfriends.name}}')">Add to My FriendPerts</btn>
+                   <btn class="btn btn-primary btn-success" ng-model="strict" ng-show="usrArr.answerers[myfriends.id].name"
+                             >Added!</btn></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</div>

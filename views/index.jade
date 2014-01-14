@@ -1,36 +1,68 @@
 extends layout
 
 block body
-  .navbar.navbar-default.navbar-fixed-top(role="navigation")
-    .navbar-header
-      button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse")
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      a.navbar-brand(href="#") Brand
-    
-    .collapse.navbar-collapse.navbar-ex1-collapse
-      ul.nav.navbar-nav
-        li
-          a(href="view1") View1
-        li  
-          a(href="view2") View2 
-  .container      
-    div(ng-controller='AppCtrl')
-      .jumbotron  
-        h1 Hello {{name}}
-      div(ng-view)
-    hr  
-    div
-      | Angular seed app: v
-      span(app-version)
+  span(data-ng-show="loadingpage")
+    .navbar.navbar-default.navbar-fixed-top(role="navigation")
+      .navbar-header
+        button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse")
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href="home") FriendPerts
 
+      .collapse.navbar-collapse.navbar-ex1-collapse(data-ng-controller="SigninCtrl")
+        ul.nav.navbar-nav
+          li(data-ng-class = "{'active':(currentpage==='/myfriendperts')}")
+            a(href="myfriendperts", data-ng-show = "auth") My FriendPerts
+          li(data-ng-class = "{'active':(currentpage==='/answers')}")
+            a(href="answers", data-ng-show = "auth") My Answers
+              span.glyphicon.glyphicon-exclamation-sign(data-ng-show= "usrArr.newask")
+          li(data-ng-class = "{'active':(currentpage==='/asks')}")
+            a(href="asks", data-ng-show = "auth") My Questions
+              span.glyphicon.glyphicon-exclamation-sign(data-ng-show= "usrArr.newanswer")
+          li(data-ng-class = "{'active':(currentpage==='/fbpage')}")
+            a(href="fbpage", data-ng-show = "auth") Facebook Friends
+        ul.nav.pull-right(ng-hide="auth")
+          li
+            a(href="", data-ng-click="signinaction()")
+              span.fa.fa-facebook-square(style="font-size:30px")
+
+        ul.nav.pull-right.ng-hide(data-ng-show="auth")
+          li.dropdown
+            a.dropdown-toggle(href="", data-toggle="dropdown", data-ng-model="auth") {{auth.name}}
+            ul.dropdown-menu
+              li
+                a(href="", data-ng-click="signoutaction()") Signout
+
+
+
+    .container
+      div(ng-controller='App2Ctrl')
+        div(ng-view)
+      hr
+      div
+        .text-muted.text-center
+
+          | FriendPerts App 2014
+  //All the required files are added to the bottom of the index page
+  //The Facebook .js file requires its own div
+  #fb-root
+    script(src='js/lib/fbsync.js')
+  script(src='http://static.firebase.com/v0/firebase.js')
+  script(src='https://cdn.firebase.com/v0/firebase-simple-login.js')
   script(src='js/lib/angular/angular.js')
+  script(src='js/lib/angular-resource/angular-resource.js')
+  script(src='js/lib/angular-bootstrap/ui-bootstrap-tpls.min.js')
+  script(src='js/lib/angular-route/angular-route.min.js')
+  script(src='js/lib/angular-fire/angularfire.js')
+  script(src='js/lib/jquery/jquery.min.js')
   script(src='js/app.js')
   script(src='js/services.js')
   script(src='js/controllers.js')
   script(src='js/filters.js')
   script(src='js/directives.js')
-  script(src='js/lib/jquery/jquery-2.0.3.min.js')
   script(src='bootstrap/js/bootstrap.min.js')
+  span(data-ng-hide="loadingpage")
+    include modals/modalloading.html
+    script(src='js/loadmodal.js')
