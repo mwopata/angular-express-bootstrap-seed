@@ -25,7 +25,34 @@
 
         <div class="row" data-ng-repeat="(askkey,askdata) in usrArr.asks">
             <hr>
-            <table>
+            <div class ="col-md-12" data-ng-repeat="(tagkey,tagdata) in askdata.tags">
+                <span class="lead">
+                    {{askdata.ask}}
+                </span>
+                <i class="glyphicon glyphicon-tag"></i>
+                {{tagdata.tag}}
+                <button class="btn btn-danger" data-ng-click="removeAsk('{{askkey}}')">Delete</button>
+            </div>
+
+            <div class = "col-md-12" data-ng-repeat="(answerskey,answersdata) in askdata.answers">
+                <i class="glyphicon glyphicon-ok-sign"></i><p style="display: inline"> {{answersdata.answer}} </p>
+                <div class="text-muted" style="display: inline"> -- {{answersdata.name}}</div>
+            </div>
+            <div class ="col-md-12">
+                <form class="form-horizontal">
+                    <div class="control-group">
+                        <div class="row">
+                            <div class="col-md-11">
+                                <input type="text" class="form-control" id = "inputAnswer" placeholder="My Response" data-ng-model="newanswers[askkey]">
+                            </div>
+                            <div class="col-md-1">
+                                <button class="btn btn-primary" data-ng-click="addAnswer('{{askkey}}', {{askdata.user}})">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--<table>
                 <tr>
                     <td><p class="lead"> {{askdata.ask}}</p></td>
                     <td data-ng-repeat="(tagkey,tagdata) in askdata.tags">
@@ -38,9 +65,15 @@
                 </tr>
                 <tr data-ng-repeat="(answerskey,answersdata) in askdata.answers">
                     <td><i class="icon-ok-sign"></i><p style="display: inline"> {{answersdata.answer}} </p>
-                        <div class="text-muted" style="display: inline"> -- {{usrArr.answerers[answersdata.user].name}}</div></td>
+                        <div class="text-muted" style="display: inline"> -- {{answersdata.name}}</div></td>
                 </tr>
-            </table>
+                <tr>
+                    <td>
+                        <input type="text" class="form-control" id = "inputAnswer" placeholder="My Answer" data-ng-model="newanswers[askkey]">
+                        <button class="btn btn-primary" data-ng-click="addAnswer('{{askkey}}', {{askdata.user}})">Add</button>
+                    </td>
+                </tr>
+            </table>-->
         </div>
     </div>
 </div>

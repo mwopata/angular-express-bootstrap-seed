@@ -196,10 +196,27 @@ function AsksCtrl($scope, $http, $rootScope, myservices, $location) {
   $scope.newtag=[];
   $scope.question= null;
   $scope.asktags=[];
+  $scope.newanswers = {};
   $scope.askanswerers=[];
   $scope.isViewLoading = true;
   console.log("Is view loading: ")
   console.log($scope.isViewLoading)
+  $scope.addAnswer = function(askId, askerId)
+  {
+    console.log($scope.newanswers);
+    console.log("Adding answer: " +$scope.newanswers[askId] + " for user " + $scope.auth.id + "to ask: " +askId);
+    var answerId = myservices.addAnswertoAsks(askId, $scope.newanswers[askId], $scope.auth.id, $scope.auth.name);
+    console.log("Returned answerId: " + answerId);
+    for (var answerers in $rootScope.usrArr.asks[askId].answerers)
+    {
+      console.log("Adding answer by: " +$scope.auth.id + " to: " + answerers);
+      myservices.addAnswertoAnswerers(askId,$scope.newanswers[askId],$scope.auth.id, $scope.auth.name, answerers, answerId);
+    }
+    console.log("asker ID");
+    console.log(askerId);
+    myservices.addAnswertoAsker(askId,$scope.newanswers[askId],$scope.auth.id, $scope.auth.name, askerId, answerId);
+    $scope.newanswers[askId] = "";
+  }
   $scope.addAsk = function(){
     //Need to populate an array with all the users who have the tags associated with them for the insert
     for (var items in $rootScope.usrArr.answerers)
@@ -235,7 +252,7 @@ function AsksCtrl($scope, $http, $rootScope, myservices, $location) {
     console.log("Adding ask: " + $scope.question + " with tags: ");
     console.log($scope.asktags);
     var askId = myservices.addAsktoAsksTable($scope.auth.id, $scope.auth.name, $scope.question, $scope.asktags, $scope.askanswerers);
-    myservices.addAsktoUsersTable($scope.auth.id, $scope.auth.name, $scope.question, $scope.asktags,askId);
+    myservices.addAsktoUsersTable($scope.auth.id, $scope.auth.name, $scope.question, $scope.asktags,askId, $scope.askanswerers);
     //Do some logic to see if tags match up and if so, insert
     //Look at the answers that match the tags ($scope.askanswerers
 
