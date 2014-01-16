@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f11a8c90-10e1-4ca7-8b4b-ab2cb4ffcbe0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/goog.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.jade" afterPath="$PROJECT_DIR$/views/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/partialhome.html" afterPath="$PROJECT_DIR$/views/partials/partialhome.html" />
     </list>
     <ignored path="friendperts.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,28 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="layout.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/layout.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="14" selection-start="340" selection-end="340" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="240">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="48" column="51" selection-start="948" selection-end="948" vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="945">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Procfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
               <folding />
             </state>
           </provider>
@@ -81,20 +62,58 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.jade" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="30" selection-start="2024" selection-end="2024" vertical-scroll-proportion="-19.2" vertical-offset="255" max-vertical-offset="1125">
+            <state line="49" column="17" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.46502057" vertical-offset="396" max-vertical-offset="1125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="goog.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="goog.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/goog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="23" selection-start="411" selection-end="411" vertical-scroll-proportion="0.115830116" vertical-offset="0" max-vertical-offset="777">
+            <state line="6" column="23" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/directives.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/services.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="250" column="18" selection-start="9557" selection-end="9568" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4515">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loadmodal.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/loadmodal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="partialhome.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/partials/partialhome.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="16" selection-start="2556" selection-end="2556" vertical-scroll-proportion="-19.166666" vertical-offset="380" max-vertical-offset="1110">
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,7 +133,6 @@
       <list>
         <option value="$PROJECT_DIR$/views/partials/partialfblist.html" />
         <option value="$PROJECT_DIR$/views/plain.html" />
-        <option value="$PROJECT_DIR$/views/partials/partialhome.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/procfile" />
         <option value="$PROJECT_DIR$/Procfile" />
@@ -123,8 +141,9 @@
         <option value="$PROJECT_DIR$/public/js/lib/bootstrap-select/bootstrap-select.min.css" />
         <option value="$PROJECT_DIR$/views/partials/partialmyfriendperts.html" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
-        <option value="$PROJECT_DIR$/views/index.jade" />
         <option value="$PROJECT_DIR$/public/js/goog.js" />
+        <option value="$PROJECT_DIR$/views/partials/partialhome.html" />
+        <option value="$PROJECT_DIR$/views/index.jade" />
       </list>
     </option>
   </component>
@@ -189,6 +208,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="friendperts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="friendperts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="friendperts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="friendperts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modals" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,7 +481,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/partialasks.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="14" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1260" />
+        <state line="23" column="14" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1260">
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/partialanswers.html">
@@ -459,7 +519,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="30" selection-start="1653" selection-end="1663" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1230" />
+        <state line="58" column="30" selection-start="1653" selection-end="1663" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1230">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layout.jade">
@@ -507,7 +569,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="30" selection-start="1653" selection-end="1663" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1230" />
+        <state line="58" column="30" selection-start="1653" selection-end="1663" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1230">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/partialfblist.html">
@@ -520,19 +584,9 @@
         <state line="5" column="8" selection-start="180" selection-end="180" vertical-scroll-proportion="-3.5416667" vertical-offset="0" max-vertical-offset="816" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/partialhome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="90" selection-start="2698" selection-end="2698" vertical-scroll-proportion="0.0" vertical-offset="295" max-vertical-offset="1035" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="70" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1410" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="250" column="18" selection-start="9557" selection-end="9568" vertical-scroll-proportion="-46.46154" vertical-offset="2542" max-vertical-offset="4515" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers.js">
@@ -542,7 +596,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/partialasks.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="33" selection-start="1428" selection-end="1428" vertical-scroll-proportion="0.6369863" vertical-offset="0" max-vertical-offset="1260" />
+        <state line="31" column="33" selection-start="1428" selection-end="1428" vertical-scroll-proportion="0.6369863" vertical-offset="0" max-vertical-offset="1260">
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
@@ -554,7 +613,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="30" selection-start="1653" selection-end="1663" vertical-scroll-proportion="0.53667957" vertical-offset="453" max-vertical-offset="1230" />
+        <state line="58" column="30" selection-start="1653" selection-end="1663" vertical-scroll-proportion="0.53667957" vertical-offset="453" max-vertical-offset="1230">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/partialmyfriendperts.html">
@@ -592,16 +653,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.jade">
+    <entry file="file://$PROJECT_DIR$/public/js/directives.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="30" selection-start="2024" selection-end="2024" vertical-scroll-proportion="-19.2" vertical-offset="255" max-vertical-offset="1125">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="250" column="18" selection-start="9557" selection-end="9568" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/loadmodal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="754">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/goog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="411" selection-end="411" vertical-scroll-proportion="0.115830116" vertical-offset="0" max-vertical-offset="777">
+        <state line="6" column="23" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/partialhome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="16" selection-start="2556" selection-end="2556" vertical-scroll-proportion="-19.166666" vertical-offset="380" max-vertical-offset="1110">
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="17" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.46502057" vertical-offset="396" max-vertical-offset="1125">
           <folding />
         </state>
       </provider>
