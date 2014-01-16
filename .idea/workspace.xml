@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f11a8c90-10e1-4ca7-8b4b-ab2cb4ffcbe0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.jade" afterPath="$PROJECT_DIR$/views/index.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/partialhome.html" afterPath="$PROJECT_DIR$/views/partials/partialhome.html" />
     </list>
     <ignored path="friendperts.iws" />
@@ -62,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jade" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="17" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.46502057" vertical-offset="396" max-vertical-offset="1125">
+            <state line="32" column="98" selection-start="1603" selection-end="1603" vertical-scroll-proportion="-3.36" vertical-offset="396" max-vertical-offset="1125">
               <folding />
             </state>
           </provider>
@@ -107,10 +106,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="partialhome.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="partialhome.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/partials/partialhome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="16" selection-start="2556" selection-end="2556" vertical-scroll-proportion="-19.166666" vertical-offset="380" max-vertical-offset="1110">
+            <state line="40" column="14" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.82191783" vertical-offset="0" max-vertical-offset="1110">
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -142,8 +141,8 @@
         <option value="$PROJECT_DIR$/views/partials/partialmyfriendperts.html" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/public/js/goog.js" />
-        <option value="$PROJECT_DIR$/views/partials/partialhome.html" />
         <option value="$PROJECT_DIR$/views/index.jade" />
+        <option value="$PROJECT_DIR$/views/partials/partialhome.html" />
       </list>
     </option>
   </component>
@@ -646,13 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/partialfblist.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="754">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/directives.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
@@ -681,19 +673,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/partialhome.html">
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="16" selection-start="2556" selection-end="2556" vertical-scroll-proportion="-19.166666" vertical-offset="380" max-vertical-offset="1110">
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="32" column="98" selection-start="1603" selection-end="1603" vertical-scroll-proportion="-3.36" vertical-offset="396" max-vertical-offset="1125">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.jade">
+    <entry file="file://$PROJECT_DIR$/views/partials/partialfblist.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="17" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.46502057" vertical-offset="396" max-vertical-offset="1125">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="754">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/partialhome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="14" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.82191783" vertical-offset="0" max-vertical-offset="1110">
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
